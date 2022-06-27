@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		877626DB2869F06600C43B47 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 877626DA2869F06600C43B47 /* Colors.swift */; };
+		877626DD2869FB1900C43B47 /* Icons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 877626DC2869FB1900C43B47 /* Icons.swift */; };
+		877626E02869FD4600C43B47 /* ViewConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 877626DF2869FD4600C43B47 /* ViewConfiguration.swift */; };
 		87FB6E502863582500193D46 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87FB6E4F2863582500193D46 /* AppDelegate.swift */; };
 		87FB6E522863582500193D46 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87FB6E512863582500193D46 /* SceneDelegate.swift */; };
 		87FB6E542863582500193D46 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87FB6E532863582500193D46 /* ViewController.swift */; };
@@ -35,6 +38,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		877626DA2869F06600C43B47 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		877626DC2869FB1900C43B47 /* Icons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Icons.swift; sourceTree = "<group>"; };
+		877626DF2869FD4600C43B47 /* ViewConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewConfiguration.swift; sourceTree = "<group>"; };
 		87FB6E4C2863582500193D46 /* desafio-cora.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "desafio-cora.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		87FB6E4F2863582500193D46 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		87FB6E512863582500193D46 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -74,6 +80,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		877626D92869F04E00C43B47 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				877626DE2869FD3E00C43B47 /* Extensions */,
+				877626DA2869F06600C43B47 /* Colors.swift */,
+				877626DC2869FB1900C43B47 /* Icons.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		877626DE2869FD3E00C43B47 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				877626DF2869FD4600C43B47 /* ViewConfiguration.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		87FB6E432863582500193D46 = {
 			isa = PBXGroup;
 			children = (
@@ -97,6 +121,7 @@
 		87FB6E4E2863582500193D46 /* desafio-cora */ = {
 			isa = PBXGroup;
 			children = (
+				877626D92869F04E00C43B47 /* Resources */,
 				87FB6E4F2863582500193D46 /* AppDelegate.swift */,
 				87FB6E512863582500193D46 /* SceneDelegate.swift */,
 				87FB6E532863582500193D46 /* ViewController.swift */,
@@ -255,7 +280,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				87FB6E542863582500193D46 /* ViewController.swift in Sources */,
+				877626DB2869F06600C43B47 /* Colors.swift in Sources */,
 				87FB6E502863582500193D46 /* AppDelegate.swift in Sources */,
+				877626E02869FD4600C43B47 /* ViewConfiguration.swift in Sources */,
+				877626DD2869FB1900C43B47 /* Icons.swift in Sources */,
 				87FB6E522863582500193D46 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -354,7 +382,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				INFOPLIST_KEY_CFBundleDisplayName = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -408,7 +437,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				INFOPLIST_KEY_CFBundleDisplayName = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -423,9 +453,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = QULR5QTP52;
+				DEVELOPMENT_TEAM = R6666T3YAD;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "desafio-cora/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -437,8 +468,9 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "luiza-e-andy.desafio-cora";
+				PRODUCT_BUNDLE_IDENTIFIER = "desafio-cora";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -450,9 +482,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = QULR5QTP52;
+				DEVELOPMENT_TEAM = R6666T3YAD;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "desafio-cora/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -464,8 +497,9 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "luiza-e-andy.desafio-cora";
+				PRODUCT_BUNDLE_IDENTIFIER = "desafio-cora";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
