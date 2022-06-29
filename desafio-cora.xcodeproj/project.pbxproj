@@ -10,6 +10,7 @@
 		877626DB2869F06600C43B47 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 877626DA2869F06600C43B47 /* Colors.swift */; };
 		877626DD2869FB1900C43B47 /* Icons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 877626DC2869FB1900C43B47 /* Icons.swift */; };
 		877626E02869FD4600C43B47 /* ViewConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 877626DF2869FD4600C43B47 /* ViewConfiguration.swift */; };
+		87DFE77C286C958700D99760 /* IntroView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87DFE77B286C958700D99760 /* IntroView.swift */; };
 		87FB6E502863582500193D46 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87FB6E4F2863582500193D46 /* AppDelegate.swift */; };
 		87FB6E522863582500193D46 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87FB6E512863582500193D46 /* SceneDelegate.swift */; };
 		87FB6E542863582500193D46 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87FB6E532863582500193D46 /* ViewController.swift */; };
@@ -41,6 +42,7 @@
 		877626DA2869F06600C43B47 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		877626DC2869FB1900C43B47 /* Icons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Icons.swift; sourceTree = "<group>"; };
 		877626DF2869FD4600C43B47 /* ViewConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewConfiguration.swift; sourceTree = "<group>"; };
+		87DFE77B286C958700D99760 /* IntroView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroView.swift; sourceTree = "<group>"; };
 		87FB6E4C2863582500193D46 /* desafio-cora.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "desafio-cora.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		87FB6E4F2863582500193D46 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		87FB6E512863582500193D46 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -125,6 +127,7 @@
 				87FB6E4F2863582500193D46 /* AppDelegate.swift */,
 				87FB6E512863582500193D46 /* SceneDelegate.swift */,
 				87FB6E532863582500193D46 /* ViewController.swift */,
+				87DFE77B286C958700D99760 /* IntroView.swift */,
 				87FB6E582863582700193D46 /* Assets.xcassets */,
 				87FB6E5A2863582700193D46 /* LaunchScreen.storyboard */,
 				87FB6E5D2863582700193D46 /* Info.plist */,
@@ -279,6 +282,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				87DFE77C286C958700D99760 /* IntroView.swift in Sources */,
 				87FB6E542863582500193D46 /* ViewController.swift in Sources */,
 				877626DB2869F06600C43B47 /* Colors.swift in Sources */,
 				87FB6E502863582500193D46 /* AppDelegate.swift in Sources */,
