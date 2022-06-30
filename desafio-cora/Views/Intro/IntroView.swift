@@ -25,30 +25,26 @@ final class IntroView: UIView, ViewConfiguration {
     
     
     private lazy var title: UILabel = {
-        var title: UILabel = UILabel()
+        var title: UILabel = UILabel.build()
         title.text = "Conta Digital PJ"
         title.font = UIFont(name: "Montserrat-Bold", size: 28)
         title.textColor = .white
-        title.translatesAutoresizingMaskIntoConstraints = false
         return title
     }()
     
     private lazy var subTitle: UILabel = {
-        var subTitle: UILabel = UILabel()
+        var subTitle = UILabel.build()
         subTitle.text = "Poderosamente simples"
         subTitle.font = .systemFont(ofSize: 28)
         subTitle.textColor = .white
-        subTitle.translatesAutoresizingMaskIntoConstraints = false
         return subTitle
     }()
     
     private lazy var textDescription: UILabel = {
-        var description: UILabel = UILabel()
+        var description = UILabel.build()
         description.text = "Sua empresa livre burocracias e de taxas para gerar boletos, fazer transferências e pagamentos."
         description.font = .systemFont(ofSize: 16)
-        description.numberOfLines = 0
         description.textColor = .white
-        description.translatesAutoresizingMaskIntoConstraints = false
         return description
     }()
     

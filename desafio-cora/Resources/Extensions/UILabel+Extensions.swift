@@ -11,7 +11,7 @@ import UIKit
 
 extension UILabel {
     
-    func build(numberOfLines: Int = 0) -> UILabel {
+    static func build(numberOfLines: Int = 0) -> UILabel {
         let label = UILabel()
         label.numberOfLines = numberOfLines
         label.translatesAutoresizingMaskIntoConstraints = false
