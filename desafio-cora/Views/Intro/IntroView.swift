@@ -47,9 +47,23 @@ final class IntroView: UIView, ViewConfiguration {
         return description
     }()
     
+    private lazy var buttonsStackView: UIStackView = {
+       let stack = UIStackView()
+        stack.axis = .vertical
+        stack.spacing = 16
+        stack.translatesAutoresizingMaskIntoConstraints = false
+        return stack
+    }()
+    
     private lazy var signInButton: UIButton = {
         let button: UIButton = UIButton.build(type: .primary)
         button.setTitle("Quero fazer parte", for: .normal)
+        return button
+    }()
+    
+    private lazy var loginButton: UIButton = {
+        let button: UIButton = UIButton.build(type: .secondary)
+        button.setTitle("Já sou cliente", for: .normal)
         return button
     }()
     
@@ -68,7 +82,8 @@ final class IntroView: UIView, ViewConfiguration {
     }
     
     func buildViews() {
-        [personImage,coraLogo, title, subTitle, textDescription, signInButton].forEach(addSubview)
+        [personImage,coraLogo, title, subTitle, textDescription,buttonsStackView].forEach(addSubview)
+        [signInButton, loginButton].forEach(buttonsStackView.addArrangedSubview)
     }
     
     func setupConstraints() {
@@ -95,9 +110,9 @@ final class IntroView: UIView, ViewConfiguration {
             textDescription.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 24),
             textDescription.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -24),
             
-            signInButton.topAnchor.constraint(equalTo: textDescription.bottomAnchor, constant: 24),
-            signInButton.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 24),
-            signInButton.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -24),
+            buttonsStackView.topAnchor.constraint(equalTo: textDescription.bottomAnchor, constant: 24),
+            buttonsStackView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 24),
+            buttonsStackView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -24),
         ])
     }
     
