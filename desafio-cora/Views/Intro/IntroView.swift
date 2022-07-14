@@ -23,7 +23,6 @@ final class IntroView: UIView, ViewConfiguration {
         return personImage
     }()
     
-    
     private lazy var title: UILabel = {
         var title: UILabel = UILabel.build()
         title.text = "Conta Digital PJ"
@@ -49,10 +48,8 @@ final class IntroView: UIView, ViewConfiguration {
     }()
     
     private lazy var signInButton: UIButton = {
-        var button: UIButton = UIButton()
+        let button: UIButton = UIButton.build(type: .primary)
         button.setTitle("Quero fazer parte", for: .normal)
-        button.backgroundColor = DSColors.primary.color
-        button.translatesAutoresizingMaskIntoConstraints = false
         return button
     }()
     
@@ -86,8 +83,6 @@ final class IntroView: UIView, ViewConfiguration {
             coraLogo.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 24),
 //            coraLogo.heightAnchor.constraint(equalToConstant: 90),
             
-            
-            
             title.topAnchor.constraint(equalTo: personImage.bottomAnchor, constant: 16),
             title.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 24),
             title.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -24),
@@ -103,13 +98,8 @@ final class IntroView: UIView, ViewConfiguration {
             signInButton.topAnchor.constraint(equalTo: textDescription.bottomAnchor, constant: 24),
             signInButton.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 24),
             signInButton.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -24),
- 
-            
         ])
     }
-    
-    
-    
     
 }
 

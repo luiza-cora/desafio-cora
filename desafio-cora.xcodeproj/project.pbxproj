@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		875D6FB8287A3BCC000D9D52 /* UIButton+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 875D6FB7287A3BCC000D9D52 /* UIButton+Extensions.swift */; };
 		877626DB2869F06600C43B47 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 877626DA2869F06600C43B47 /* Colors.swift */; };
 		877626DD2869FB1900C43B47 /* Icons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 877626DC2869FB1900C43B47 /* Icons.swift */; };
 		877626E02869FD4600C43B47 /* ViewConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 877626DF2869FD4600C43B47 /* ViewConfiguration.swift */; };
@@ -43,6 +44,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		875D6FB7287A3BCC000D9D52 /* UIButton+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Extensions.swift"; sourceTree = "<group>"; };
 		877626DA2869F06600C43B47 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		877626DC2869FB1900C43B47 /* Icons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Icons.swift; sourceTree = "<group>"; };
 		877626DF2869FD4600C43B47 /* ViewConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewConfiguration.swift; sourceTree = "<group>"; };
@@ -105,6 +107,7 @@
 			children = (
 				877626DF2869FD4600C43B47 /* ViewConfiguration.swift */,
 				87851A54286DC9DE00D43DCF /* UILabel+Extensions.swift */,
+				875D6FB7287A3BCC000D9D52 /* UIButton+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -333,6 +336,7 @@
 				87FB6E542863582500193D46 /* ViewController.swift in Sources */,
 				877626DB2869F06600C43B47 /* Colors.swift in Sources */,
 				87FB6E502863582500193D46 /* AppDelegate.swift in Sources */,
+				875D6FB8287A3BCC000D9D52 /* UIButton+Extensions.swift in Sources */,
 				87851A55286DC9DE00D43DCF /* UILabel+Extensions.swift in Sources */,
 				877626E02869FD4600C43B47 /* ViewConfiguration.swift in Sources */,
 				877626DD2869FB1900C43B47 /* Icons.swift in Sources */,
@@ -435,7 +439,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -490,7 +494,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				INFOPLIST_KEY_CFBundleDisplayName = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
