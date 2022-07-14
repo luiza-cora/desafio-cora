@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		870CEF992880586F007E87EB /* LoginCPFView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 870CEF982880586F007E87EB /* LoginCPFView.swift */; };
 		875D6FB8287A3BCC000D9D52 /* UIButton+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 875D6FB7287A3BCC000D9D52 /* UIButton+Extensions.swift */; };
 		877626DB2869F06600C43B47 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 877626DA2869F06600C43B47 /* Colors.swift */; };
 		877626DD2869FB1900C43B47 /* Icons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 877626DC2869FB1900C43B47 /* Icons.swift */; };
@@ -44,6 +45,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		870CEF982880586F007E87EB /* LoginCPFView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCPFView.swift; sourceTree = "<group>"; };
 		875D6FB7287A3BCC000D9D52 /* UIButton+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Extensions.swift"; sourceTree = "<group>"; };
 		877626DA2869F06600C43B47 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		877626DC2869FB1900C43B47 /* Icons.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Icons.swift; sourceTree = "<group>"; };
@@ -92,6 +94,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		870CEF9328805847007E87EB /* LoginCPF */ = {
+			isa = PBXGroup;
+			children = (
+				870CEF9528805855007E87EB /* Resources */,
+			);
+			path = LoginCPF;
+			sourceTree = "<group>";
+		};
+		870CEF942880584C007E87EB /* LoginPassword */ = {
+			isa = PBXGroup;
+			children = (
+				870CEF9628805858007E87EB /* Resources */,
+			);
+			path = LoginPassword;
+			sourceTree = "<group>";
+		};
+		870CEF9528805855007E87EB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				870CEF982880586F007E87EB /* LoginCPFView.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		870CEF9628805858007E87EB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		877626D92869F04E00C43B47 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
@@ -115,6 +148,8 @@
 		87851A56286DCCFC00D43DCF /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				870CEF942880584C007E87EB /* LoginPassword */,
+				870CEF9328805847007E87EB /* LoginCPF */,
 				87851A57286DCD0200D43DCF /* Intro */,
 			);
 			path = Views;
@@ -332,6 +367,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				870CEF992880586F007E87EB /* LoginCPFView.swift in Sources */,
 				87DFE77C286C958700D99760 /* IntroView.swift in Sources */,
 				87FB6E542863582500193D46 /* ViewController.swift in Sources */,
 				877626DB2869F06600C43B47 /* Colors.swift in Sources */,

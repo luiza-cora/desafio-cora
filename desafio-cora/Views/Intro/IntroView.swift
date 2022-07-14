@@ -9,6 +9,23 @@ import UIKit
 
 final class IntroView: UIView, ViewConfiguration {
     
+    private lazy var rounder: CAShapeLayer = {
+        
+        
+        let roundedRect = UIBezierPath(roundedRect: CGRect(x: 0, y: 0, width: 256, height: 256), cornerRadius: 50)
+        let circle = UIBezierPath(ovalIn: CGRect(x: 0, y: 0, width: 256, height: 256))
+//        circle.translatesAutoresizingMaskIntoConstraints = false
+        
+        let shapeLayer = CAShapeLayer()
+        shapeLayer.path = circle.cgPath
+        shapeLayer.strokeColor = UIColor.black.cgColor
+        shapeLayer.lineWidth = 11.0
+         // link: https://stackoverflow.com/questions/61631723/how-can-i-add-a-uibezierpath-to-a-uiview-that-uses-auto-layout
+        return shapeLayer
+//        return circle
+    }()
+    
+    
     private lazy var coraLogo: UIImageView = {
        let logo  = UIImageView()
         logo.image = UIImage(named: "cora-logo")
@@ -41,7 +58,13 @@ final class IntroView: UIView, ViewConfiguration {
     
     private lazy var textDescription: UILabel = {
         var description = UILabel.build()
-        description.text = "Sua empresa livre burocracias e de taxas para gerar boletos, fazer transferências e pagamentos."
+        let text = NSMutableAttributedString(string: "Sua empresa livre burocracias e de taxas para gerar boletos, fazer transferências e pagamentos.")
+        let paragraphStyle = NSMutableParagraphStyle()
+        paragraphStyle.lineSpacing = 8
+        
+        text.addAttribute(NSAttributedString.Key.paragraphStyle, value: paragraphStyle, range: NSMakeRange(0, text.length))
+        description.attributedText = text
+        
         description.font = .systemFont(ofSize: 16)
         description.textColor = .white
         return description
@@ -57,7 +80,7 @@ final class IntroView: UIView, ViewConfiguration {
     
     private lazy var signInButton: UIButton = {
         let button: UIButton = UIButton.build(type: .primary)
-        button.setTitle("Quero fazer parte", for: .normal)
+        button.setTitle("Quero fazer parte!", for: .normal)
         return button
     }()
     
@@ -84,25 +107,24 @@ final class IntroView: UIView, ViewConfiguration {
     func buildViews() {
         [personImage,coraLogo, title, subTitle, textDescription,buttonsStackView].forEach(addSubview)
         [signInButton, loginButton].forEach(buttonsStackView.addArrangedSubview)
+        layer.addSublayer(rounder)
     }
     
     func setupConstraints() {
         NSLayoutConstraint.activate([
-            personImage.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor),
+            personImage.topAnchor.constraint(equalTo: topAnchor),
             personImage.leadingAnchor.constraint(equalTo: leadingAnchor),
             personImage.trailingAnchor.constraint(equalTo: trailingAnchor),
             personImage.heightAnchor.constraint(equalToConstant: 355),
             
-            
             coraLogo.topAnchor.constraint(equalTo: safeAreaLayoutGuide.topAnchor, constant: 24),
             coraLogo.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 24),
-//            coraLogo.heightAnchor.constraint(equalToConstant: 90),
             
             title.topAnchor.constraint(equalTo: personImage.bottomAnchor, constant: 16),
             title.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 24),
             title.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -24),
             
-            subTitle.topAnchor.constraint(equalTo: title.bottomAnchor),
+            subTitle.topAnchor.constraint(equalTo: title.bottomAnchor, constant: 8),
             subTitle.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 24),
             subTitle.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -24),
             
@@ -110,12 +132,10 @@ final class IntroView: UIView, ViewConfiguration {
             textDescription.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 24),
             textDescription.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -24),
             
-            buttonsStackView.topAnchor.constraint(equalTo: textDescription.bottomAnchor, constant: 24),
+            
             buttonsStackView.leadingAnchor.constraint(equalTo: leadingAnchor, constant: 24),
             buttonsStackView.trailingAnchor.constraint(equalTo: trailingAnchor, constant: -24),
+            buttonsStackView.bottomAnchor.constraint(equalTo: safeAreaLayoutGuide.bottomAnchor, constant: -16)
         ])
     }
-    
 }
-
-
